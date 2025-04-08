@@ -1,0 +1,11 @@
+{
+    "build": {
+      "builder": "nixpacks",
+      "config": {
+        "startCmd": "node server.js"
+      }
+    },
+    "deploy": {
+      "startCommand": "node server.js"
+    }
+  }

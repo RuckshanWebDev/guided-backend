@@ -1,0 +1,12 @@
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-08T18:36:57.623Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-08T18:36:58.869Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-08T18:42:15.868Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-08T18:42:30.389Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-08T18:42:36.146Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-08T18:51:56.724Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-08T18:52:15.922Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-08T18:52:17.179Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-08T18:52:23.424Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-08T18:52:28.374Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-08T18:53:56.348Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-08T18:54:16.940Z"}
