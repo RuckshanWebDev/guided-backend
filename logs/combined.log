@@ -10,3 +10,49 @@
 {"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-08T18:52:28.374Z"}
 {"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-08T18:53:56.348Z"}
 {"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-08T18:54:16.940Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T08:44:51.423Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T08:44:53.643Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T08:49:31.419Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-10T08:49:35.486Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T08:52:09.426Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-10T08:52:15.797Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T09:00:37.760Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T09:01:23.599Z"}
+{"address":"64.233.170.108","code":"ESOCKET","command":"CONN","errno":-4039,"level":"error","message":"Error submitting case: connect ETIMEDOUT 64.233.170.108:465","port":465,"stack":"Error: connect ETIMEDOUT 64.233.170.108:465\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16)","syscall":"connect","timestamp":"2025-04-10T09:05:03.484Z"}
+{"address":"64.233.170.109","code":"ESOCKET","command":"CONN","errno":-4039,"level":"error","message":"Email server connection failed: connect ETIMEDOUT 64.233.170.109:465","port":465,"stack":"Error: connect ETIMEDOUT 64.233.170.109:465\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16)","syscall":"connect","timestamp":"2025-04-10T09:05:37.716Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T10:33:49.572Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T10:33:54.772Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T10:37:23.992Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-10T10:37:28.728Z"}
+{"level":"error","message":"Error submitting case: res.status is not a function","stack":"TypeError: res.status is not a function\n    at E:\\RUCKSHAN\\Dan Dilan\\Guided Backend\\server.js:201:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-04-10T10:37:28.728Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T10:38:20.940Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T10:38:22.948Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T10:38:29.096Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-10T10:38:33.571Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T10:42:07.547Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T10:42:08.937Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T10:42:59.386Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-10T10:43:03.470Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T10:45:14.320Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T10:45:16.188Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T10:46:08.353Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-10T10:46:12.444Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:25:23.093Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:25:27.878Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:26:19.908Z"}
+{"level":"warn","message":"Missing required fields","missingFields":["fileLink"],"timestamp":"2025-04-10T13:26:19.908Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T13:33:22.827Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T13:33:24.540Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:33:29.285Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T13:34:12.056Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T13:34:15.859Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:34:19.637Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T13:34:36.836Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T13:34:38.257Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:34:40.743Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2025-04-10T13:37:20.898Z"}
+{"level":"info","message":"Email server is ready to send messages","timestamp":"2025-04-10T13:37:22.148Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:37:27.795Z"}
+{"code":"EMESSAGE","command":"DATA","level":"error","message":"Error submitting case: Message failed: 552-5.7.0 This message was blocked because its content presents a potential\n552-5.7.0 security issue. To review our message content and attachment content\n552-5.7.0 guidelines, go to\n552 5.7.0  https://support.google.com/mail/?p=BlockedMessage 98e67ed59e1d1-306def4e800sm3487783a91.0 - gsmtp","response":"552-5.7.0 This message was blocked because its content presents a potential\n552-5.7.0 security issue. To review our message content and attachment content\n552-5.7.0 guidelines, go to\n552 5.7.0  https://support.google.com/mail/?p=BlockedMessage 98e67ed59e1d1-306def4e800sm3487783a91.0 - gsmtp","responseCode":552,"stack":"Error: Message failed: 552-5.7.0 This message was blocked because its content presents a potential\n552-5.7.0 security issue. To review our message content and attachment content\n552-5.7.0 guidelines, go to\n552 5.7.0  https://support.google.com/mail/?p=BlockedMessage 98e67ed59e1d1-306def4e800sm3487783a91.0 - gsmtp\n    at SMTPConnection._formatError (E:\\RUCKSHAN\\Dan Dilan\\Guided Backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:809:19)\n    at SMTPConnection._actionSMTPStream (E:\\RUCKSHAN\\Dan Dilan\\Guided Backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:1730:34)\n    at SMTPConnection.<anonymous> (E:\\RUCKSHAN\\Dan Dilan\\Guided Backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:1198:22)\n    at SMTPConnection._processResponse (E:\\RUCKSHAN\\Dan Dilan\\Guided Backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:993:20)\n    at SMTPConnection._onData (E:\\RUCKSHAN\\Dan Dilan\\Guided Backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:774:14)\n    at SMTPConnection._onSocketData (E:\\RUCKSHAN\\Dan Dilan\\Guided Backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:195:44)\n    at TLSSocket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)","timestamp":"2025-04-10T13:38:14.146Z"}
+{"doctor":"test","level":"info","message":"New case submission received","patient":"test","timestamp":"2025-04-10T13:40:43.395Z"}
+{"level":"info","message":"Case submitted successfully","patient":"test","timestamp":"2025-04-10T13:40:52.384Z"}

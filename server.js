@@ -107,6 +107,9 @@ app.post('/SubmitCase', upload.any(), async (req, res) => {
       'doctorName','doctorLicense','doctorPhone','doctorAddress','doctorCity','doctorState','doctorZip',
       'submitterName'
     ];
+    if (files.length === 0) {
+      requiredFields.push('fileLink');
+    }
 
     const missingFields = requiredFields.filter(field => !formData[field]);
     if (missingFields.length > 0) {
@@ -153,20 +156,48 @@ app.post('/SubmitCase', upload.any(), async (req, res) => {
       });
     }
 
-    const allowedTypes = [
-      'application/octet-stream',
-      'application/dicom',
+    const allowedMimeTypes = [
+      'application/zip',
       'application/pdf',
+      'application/dicom',
+      'application/octet-stream',
       'image/jpeg',
-      'image/png'
+      'image/png',
+      'image/tiff',
+      'image/bmp',
+      'image/heic'
     ];
-
-    const invalidFiles = files.filter(file => !allowedTypes.includes(file.mimetype));
+    
+    const allowedExtensions = [
+      '.zip',
+      '.stl',
+      '.ply',
+      '.dcm',
+      '.dicom',
+      '.cbct',
+      '.pdf',
+      '.jpg',
+      '.jpeg',
+      '.png',
+      '.tiff',
+      '.bmp',
+      '.heic'
+    ];
+    
+    const invalidFiles = files.filter(file => {
+      const ext = path.extname(file.originalname).toLowerCase();
+      return !allowedMimeTypes.includes(file.mimetype) && !allowedExtensions.includes(ext);
+    });
+    
     if (invalidFiles.length > 0) {
       return res.status(400).json({
         success: false,
         error: 'Invalid file type(s) uploaded',
-        invalidFiles: invalidFiles.map(f => f.originalname)
+        invalidFiles: invalidFiles.map(f => ({
+          filename: f.originalname,
+          mimetype: f.mimetype,
+          extension: path.extname(f.originalname).toLowerCase()
+        }))
       });
     }
 
@@ -194,7 +225,8 @@ app.post('/SubmitCase', upload.any(), async (req, res) => {
       attachments: attachments,
     };
 
-    await transporter.sendMail(mailOptions);
+    const resp = await transporter.sendMail(mailOptions);
+    console.log(resp);
     logger.info('Case submitted successfully', { patient: formData.patientName });
 
     res.status(200).json({
@@ -291,7 +323,7 @@ async function generatePdf(formData) {
       },
       {
         title: 'Implant System',
-        fields: ['implantSystem', 'implantPositions', 'implantDimensions', 'tissueFlapType']
+        fields: ['implantSystem', 'implantPositions', 'implantDimensions', 'tissueFlapType', 'fileLink']
       },
       {
         title: 'Doctor Information',
@@ -358,7 +390,7 @@ function generateEmailHtml(formData) {
     },
     {
       title: 'Implant System',
-      fields: ['implantSystem', 'implantPositions', 'implantDimensions', 'tissueFlapType']
+      fields: ['implantSystem', 'implantPositions', 'implantDimensions', 'tissueFlapType', 'fileLink']
     },
     {
       title: 'Doctor Information',
